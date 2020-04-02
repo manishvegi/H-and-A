@@ -197,9 +197,23 @@ div.title {
 4. Header
 ================================================
 */
+/* #jobapp::before{
+	content: '';
+	background-color: rgba(255, 0, 0, 0.13);
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	position: absolute;
+
+} */
+
+
 header {
 	width: 100%;
 	z-index: 99;
+	box-shadow: 5px 1px 10px 1px #888888;
 
 }
 .affix.fadeInDown {
@@ -239,8 +253,8 @@ body > header > div > div > div > div.col-sm-12.col-md-3.hidden-xs > a > img{
 	padding: 20px 0 0px;
 	width: 100%;
 	float: left;
-	background: #70994b;
-	background-image: linear-gradient(to right, white 30%, #70994b 30%)
+	background: #fff;
+	background-image: linear-gradient(to right, #fff 30%, #fff 30%)
 }
 .affix .logo-wrapper {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.118);
@@ -273,7 +287,7 @@ body > header > div > div > div > div.col-sm-12.col-md-3.hidden-xs > a > img{
 	display: none;
 }
 .navbar-default .navbar-nav > li > a {
-	color: #fff;
+	color: #1e2832;
 	font-size: 17px;
 	text-transform: uppercase;
 	border-bottom: solid 1px #191b1d;
@@ -284,9 +298,10 @@ body > header > div > div > div > div.col-sm-12.col-md-3.hidden-xs > a > img{
 }
 .navbar-nav > li {
 	padding: 0 18px;
+	
 }
 .navbar-default .navbar-nav.nav li:hover > a, .navbar-default .navbar-nav li.active > a:hover, .navbar-default .navbar-nav li.active > a:focus, .navbar-default .navbar-nav li.active > a, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .nav .open > a, .navbar-default .nav .open > a:focus, .navbar-default .nav .open > a:hover, .side-nav li > a:focus {
-	color: #fff;
+	color: #89b927;
 	background-color: inherit;
 	border-bottom: solid 1px #89b927;
 }
@@ -332,7 +347,7 @@ body > header > div > div > div > div.col-sm-12.col-md-3.hidden-xs > a > img{
 }
 .login a {
 	border-radius: 20px;
-	background: #89b927;
+	background: #7fad56;
 	color: #fff;
 	padding: 10px 40px;
 	font-family: 'Rajdhani', sans-serif;
@@ -344,7 +359,7 @@ body > header > div > div > div > div.col-sm-12.col-md-3.hidden-xs > a > img{
 	float: right;
 	margin: 0 0 0 14px;
 	padding: 0;
-	background: #89b927;
+	background: #7fad56;
 	width: 40px;
 	height: 40px;
 	text-align: center;
@@ -668,7 +683,7 @@ ul.onwhite a.icoLinkedin:hover {
 	width: 100%;
 }
 .search-bg {
-	background: #89b927;
+	background: #7fad56;
 	border-radius: 120px;
 	overflow: hidden;
 	position: relative;
@@ -738,7 +753,7 @@ ul.onwhite a.icoLinkedin:hover {
 ================================================
 */
 .callouts-wrapper {
-	padding: 86px 0 100px;
+	padding: 86px 0 10px;
 	width: 100%;
 	float: left;
 	text-align: center;
@@ -1350,7 +1365,7 @@ div.apply-jobs-wrapper {
 	text-align: center;
 }
 .testimonials-inner {
-	background: #89b927 none repeat scroll 0 0;
+	background: #7fad56 none repeat scroll 0 0;
 	border-radius: 10px;
 	padding: 25px;
 	width: 100%;
@@ -1369,7 +1384,7 @@ div.apply-jobs-wrapper {
 .triangle-down {
   border-left: 25px solid rgba(0, 0, 0, 0);
   border-right: 25px solid rgba(0, 0, 0, 0);
-  border-top: 50px solid #89b927;
+  border-top: 50px solid #7fad56;
   height: 0;
   width: 0;
 }
@@ -2685,17 +2700,24 @@ a.button {
 .animated .dp{
 	opacity: 1;
 }
+#fotimg{
+	background-color: white;padding: 20px;
+
+}
+
 body > footer > div:nth-child(2) > div > div.col-sm-6.col-md-4 > div > img {
 width: 30%;
 }
+
 footer {
 	padding: 96px 0 73px;
 	margin: 0;
 	width: 100%;
 	float: left;
-	background: radial-gradient(#2f4208,#2b3f04) left top no-repeat;
+	background: linear-gradient(#7fad56,#6b9248) ;
 	background-size:cover;
 }
+
 footer .footer-section {
   border-bottom: 1px solid #374655;
   float: left;
@@ -2703,20 +2725,24 @@ footer .footer-section {
   padding: 0 0 30px;
   width: 100%;
 }
+
 .footer-section .single-secton {
 	margin:0 0 20px;
 	}	
+
 .footer-section .single-secton h3 {
-	color: #89b927;
+	color: #1e2832;
 	font-size: 22px;
 	font-weight: 700;
 	margin:0 0 20px;
 	padding: 0;	
 	}	
+
 .footer-section .form .form-group {
   float: left;
   width: 70%;
 }	
+
 .footer-section .form input.form-control {
   background: #ffffff none repeat scroll 0 0;
   border: medium none;
@@ -2731,11 +2757,12 @@ footer .footer-section {
   text-align: left;
   width: 100%;
 }
+
 .footer-section .form input.bttn {
-  background: #89b927 none repeat scroll 0 0;
+  background: #1e2832 none repeat scroll 0 0;
   border: medium none;
   border-radius: 0 30px 30px 0;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   float: left;
   font-family: "Rajdhani",sans-serif;
@@ -2749,30 +2776,37 @@ footer .footer-section {
   text-transform: uppercase;
   width: 30%;
 }
+
 .single-section-two img {
   margin: 0 0 20px;
+  background-color: white;padding: 20px;
 }
+
 .single-section-two p {
   color: #ffffff;
   font-family: "Rajdhani",sans-serif;
   font-size: 17px;
   font-weight: 300;	
 	}
+
 .single-section-two.white h3 {
-	color: #fff;	
-	}		
+	color: #1e2832;	
+	}
+
 .single-section-two h3 {
-	color: #89b927;
+	color: #1e2832;
 	font-size: 22px;
 	font-weight: 700;
 	margin:10px 0 40px;
 	padding: 0;	
 	}
+
 .single-section-two ul {
 	list-style:none;
 	margin:0;
 	padding:0;
 	}
+
 .single-section-two ul li:before {
   background: #89b927 none repeat scroll 0 0;
   content: "";
@@ -2812,7 +2846,7 @@ footer .footer-section {
 	border-radius:30px 0 0 30px;
 	}	
 .single-section-two .form input.bttn {
-  background: #89b927 none repeat scroll 0 0;
+  background: #1e2832 none repeat scroll 0 0;
   border: medium none;
   border-radius: 0 30px 30px 0;
   color: #ffffff;
@@ -2889,13 +2923,13 @@ footer .footer-section {
 }
 /**** Copyrights Wrapper ****/
 .copyright-wrapper {
-  background: #89b927;
+  background: #fff;
   float: left;
   padding: 15px 0;
   width: 100%;
 }
 .copyright-wrapper p {
-  color: #fff;
+  color: #000;
   font-size: 15px;
   margin: 0;
   text-align: center;

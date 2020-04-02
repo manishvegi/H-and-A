@@ -17,7 +17,7 @@
         $(window).scroll(function() {
           $('.aright').each(function() {
             if (isScrolledIntoView(this) === true) {
-              console.log('working',$(this))
+            //   console.log('working',$(this))
               $(this).removeClass('dpn')
               $(this).addClass('animated')
               $(this).addClass('fadeInRight')
@@ -30,7 +30,7 @@
         $(window).scroll(function() {
             $('.aleft').each(function() {
               if (isScrolledIntoView(this) === true) {
-                console.log('working',$(this))
+                // console.log('working',$(this))
                 $(this).removeClass('dpn')
                 $(this).addClass('animated')
                 $(this).addClass('fadeInLeft')
@@ -43,7 +43,7 @@
           $(window).scroll(function() {
             $('.aflash').each(function() {
               if (isScrolledIntoView(this) === true) {
-                console.log('working',$(this))
+                // console.log('working',$(this))
                 $(this).removeClass('dpn')
                 $(this).addClass('animated')
                 $(this).addClass('flash')
@@ -57,7 +57,7 @@
           $(window).scroll(function() {
             $('.atada').each(function() {
               if (isScrolledIntoView(this) === true) {
-                console.log('working',$(this))
+                // console.log('working',$(this))
                 $(this).removeClass('dpn')
                 $(this).addClass('animated')
                 $(this).addClass('tada')
@@ -70,7 +70,7 @@
           $(window).scroll(function() {
             $('.aswing').each(function() {
               if (isScrolledIntoView(this) === true) {
-                console.log('working',$(this))
+                // console.log('working',$(this))
                 $(this).removeClass('dpn')
                 $(this).addClass('animated')
                 $(this).addClass('swing')
@@ -79,7 +79,8 @@
                 
               }
             });
-          });   
+          });
+            
       });
 
     
