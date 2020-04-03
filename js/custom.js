@@ -53,6 +53,20 @@
               }
             });
           });   
+
+          $(window).scroll(function() {
+            $('.adown').each(function() {
+              if (isScrolledIntoView(this) === true) {
+                // console.log('working',$(this))
+                $(this).removeClass('dpn')
+                $(this).addClass('animated')
+                $(this).addClass('fadeInUp')
+                
+                $(this).addClass('dp')
+                
+              }
+            });
+          });
           
           $(window).scroll(function() {
             $('.atada').each(function() {
@@ -80,6 +94,46 @@
               }
             });
           });
+          $(window).scroll(function() {
+            $('.80000').each(function() {
+              if (isScrolledIntoView(this) === true) {
+                console.log('working 9000',$(this))
+
+                $(this).animateNumber({
+                    number: 80000
+                    
+                },500);
+                $(this).removeClass('80000')
+              }
+            });
+          });
+          $(window).scroll(function() {
+            $('.90000').each(function() {
+              if (isScrolledIntoView(this) === true) {
+                console.log('working 9000',$(this))
+
+                $(this).animateNumber({
+                    number: 90000
+                    
+                },500);
+                $(this).removeClass('90000')
+              }
+            });
+          });
+          $(window).scroll(function() {
+            $('.54127').each(function() {
+              if (isScrolledIntoView(this) === true) {
+                console.log('working 9000',$(this))
+
+                $(this).animateNumber({
+                    number: 54127
+                    
+                },500);
+              }
+              $(this).removeClass('54127')
+            });
+          });
+
             
       });
 
@@ -158,7 +212,8 @@
 
 /*------------------------------------------------------------------
 	Count Down
-	------------------------------------------------------------------*/
+    ------------------------------------------------------------------*/
+
 if ($(".count-down").length) {
     var year = parseInt($(".count-down").attr("data-countdown-year"), 10);
     var month = parseInt($(".count-down").attr("data-countdown-month"), 3) - 1;
@@ -202,17 +257,18 @@ if ($(".count-down").length) {
 	 /*------------------------------------------------------------------
         Animation Numbers
     ------------------------------------------------------------------*/
-    jQuery('.animateNumber').each(function() {
-        var num = jQuery(this).attr('data-num');
-
-        var top = jQuery(document).scrollTop() + (jQuery(window).height());
-        var pos_top = jQuery(this).offset().top;
-        if (top > pos_top && !jQuery(this).hasClass('active')) {
-            jQuery(this).addClass('active').animateNumber({
-                number: num
-            }, 2000);
-        }
-    });
+    // $('.animateNumber').each(function() {
+    //     var num = $(this).attr('data-num');
+    //     var top = $(document).scrollTop() + ($(window).height());
+    //     var pos_top = $(this).offset().top;
+        
+    //     if (top > pos_top && !$(this).hasClass('active')) {
+            
+    //         $(this).addClass('active').animateNumber({
+    //             number: num
+    //         }, 2000);
+    //     }
+    // });
     /*------------------------------------------------------------------
     Owl Carousel for Testimonials
 	------------------------------------------------------------------*/
